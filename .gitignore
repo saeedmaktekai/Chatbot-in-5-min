@@ -1,4 +1,6 @@
 .env/
-.DS_Store/
+
 myenv/
 databasechroma/
+.DS_Store/
+data/
