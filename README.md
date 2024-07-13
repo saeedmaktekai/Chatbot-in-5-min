@@ -1,4 +1,3 @@
-Here's a more polished and enhanced version of your `README.md` file with a link to your company for credibility:
 
 ---
 
