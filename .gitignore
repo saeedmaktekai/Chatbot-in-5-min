@@ -2,8 +2,10 @@ myenv/
 databasechroma/
 .DS_Store/
 chroma/
+__pycache__/
 data/
 db/
 .env
+
 
 
