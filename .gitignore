@@ -1,9 +1,9 @@
 myenv/
 databasechroma/
 .DS_Store/
+chroma/
 data/
 db/
 .env
-
 
 
