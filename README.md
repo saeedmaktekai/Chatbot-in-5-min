@@ -1,11 +1,11 @@
 
-```markdown
+
 # Chatbot-in-5-min
+this project is going to help us in make a chatbot within 5 min by cloing the repo 
+by following the step you would be able to make a chatbot in one 5 min 
 
-This project provides middleware to facilitate the injection of dependencies and chaining requests in your applications. It includes two main components:
-
-1. `chain.py` - Middleware to chain requests.
-2. `injection.py` - Middleware to handle dependency injection.
+2. `injection.py` -by runing this script its going to help you to make make a chromadb which is vectore 
+1. `main.py` - this is the main chain 
 
 ## Installation
 
