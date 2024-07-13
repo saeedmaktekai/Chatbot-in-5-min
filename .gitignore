@@ -2,9 +2,7 @@ myenv/
 databasechroma/
 .DS_Store/
 data/
-.env/
 db/
-
 .env
 
 
