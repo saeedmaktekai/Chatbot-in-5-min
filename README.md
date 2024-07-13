@@ -59,41 +59,6 @@ Ensure to review and install all dependencies as mentioned in the `requirements.
 ## Usage
 
 
-### Injection Middleware
-
-The `injection.py` after runing this script it will allow you to create chromadb
-
-```python
-from injection import InjectionMiddleware
-
-# Initialize your application
-app = YourApplication()
-app.add_middleware(InjectionMiddleware)
-
-def dependency():
-    return {"dependency": "injected"}
-
-@app.route("/example")
-def example(dep=dependency()):
-    return {"message": "This is an example endpoint with dependency injection.", "dependency": dep}
-```
-
-
-### Chain 
-
-The `chain.py` is the chain of conversation with llm 
-```python
-from chain import ChainMiddleware
-
-# Initialize your application
-app = YourApplication()
-app.add_middleware(ChainMiddleware)
-
-@app.route("/example")
-def example():
-    return {"message": "This is an example endpoint with chained requests."}
-```
-
 ## Running the Application
 
 first run the injection.py file and give it your Directory path where the data is on which you want to create a chatbot 
