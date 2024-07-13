@@ -50,37 +50,18 @@ Ensure you have Python 3.8+ installed. Install the required dependencies by runn
 pip install -r requirements.txt
 ```
 
-## Requirements
 
-The project relies on several external libraries which are listed in the `requirements.txt` file. Some of the key libraries include:
-- `aiohttp`
-- `requests`
-- `pandas`
-- `transformers`
+
+
 
 Ensure to review and install all dependencies as mentioned in the `requirements.txt` file.
 
 ## Usage
 
-### Chain Middleware
-
-The `chain.py` script provides middleware to chain requests in your application. Here is an example of how to use it:
-
-```python
-from chain import ChainMiddleware
-
-# Initialize your application
-app = YourApplication()
-app.add_middleware(ChainMiddleware)
-
-@app.route("/example")
-def example():
-    return {"message": "This is an example endpoint with chained requests."}
-```
 
 ### Injection Middleware
 
-The `injection.py` script provides middleware for dependency injection. Here is an example of how to use it:
+The `injection.py` after runing this script it will allow you to create chromadb
 
 ```python
 from injection import InjectionMiddleware
@@ -97,27 +78,31 @@ def example(dep=dependency()):
     return {"message": "This is an example endpoint with dependency injection.", "dependency": dep}
 ```
 
+
+### Chain 
+
+The `chain.py` is the chain of conversation with llm 
+```python
+from chain import ChainMiddleware
+
+# Initialize your application
+app = YourApplication()
+app.add_middleware(ChainMiddleware)
+
+@app.route("/example")
+def example():
+    return {"message": "This is an example endpoint with chained requests."}
+```
+
 ## Running the Application
 
-To run your application, use the appropriate command based on your application framework. For example, if using Flask:
-
-```bash
-python main.py
+first run the injection.py file and give it your Directory path where the data is on which you want to create a chatbot 
 ```
-
-Replace `main.py` with the appropriate module and application instance names as per your project structure.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Acknowledgments
-
-Special thanks to all the contributors and the open-source community for their valuable support and contributions.
+injecion.py
 ```
+then run chain.py which will allow you to create chatbot 
 
-You can now copy and paste the entire content into your `README.md` file.
+```
+injecion.py
+
+```
