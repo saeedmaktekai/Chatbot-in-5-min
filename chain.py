@@ -3,10 +3,9 @@ from langchain.chains import create_retrieval_chain
 from langchain.chains import create_history_aware_retriever
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_core.output_parsers import StrOutputParser
+
 from langchain_core.prompts import ChatPromptTemplate
 vectorstore=load_from_db()
-from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(model="gpt-3.5-turbo-0125")
