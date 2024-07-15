@@ -60,6 +60,9 @@ mkdir my_new_directory
 ```
 
 Ensure to review and install all dependencies as mentioned in the `requirements.txt` file.
+### Step 5: Install Dependencies
+change the directory path in inject.py so that you can use your data for the chatbot building 
+
 
 ## Usage
 
