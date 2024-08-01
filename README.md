@@ -80,5 +80,5 @@ change the directory path in inject.py so that you can use your data for the cha
     python chain.py
     ```
 
-For more details and support, visit [MakTek](https://www.maktekai.com).
+For more details and support, visit [MakTek](https://www.maktek.ai).
 
